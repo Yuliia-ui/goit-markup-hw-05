@@ -34,17 +34,18 @@ html {
 }
 
 /*link-info*/
+.link-info {
+  background-color: #1abc9c;
+  display: flex;
+  font-family: 'Open Sans';
+}
 .link-contacts {
   display: flex;
-  background-color: #1abc9c;
-  font-family: 'Open Sans';
 }
 
 .link-contacts .link-link {
   display: inline-block;
   padding-right: 36px;
-  padding-top: 21px;
-  padding-bottom: 21px;
   color: #fefefe;
   font-size: 14px;
   letter-spacing: 0px;
@@ -52,9 +53,8 @@ html {
   text-decoration: none;
 }
 
-.link-contacts .phone::before {
+.link-contacts::before {
   content: '';
-  display: inline-block;
   background-image: url(../images/phone.png);
   width: 31px;
   height: 27px;
@@ -66,6 +66,28 @@ html {
   justify-content: center;
 }
 
+/*user-menu*/
+.user-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.user-menu .user-menu-link {
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 0.7;
+  color: #fefefe;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.user-menu .user-menu-link:hover,
+.user-menu .user-menu-link:focus {
+  color: #212121;
+}
 /*nav*/
 
 .site-logo {
