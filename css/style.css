@@ -56,7 +56,7 @@ html {
 .link-contacts::before {
   display: inline-block;
   content: '';
-  background-image: url(../images/phone.png);
+  background-image: url(../images/tell.png);
   width: 20px;
   height: 30px;
   background-repeat: no-repeat;
@@ -131,36 +131,37 @@ html {
 }
 /*banner*/
 .banner {
-  width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  height: 608px;
-  background-repeat: no-repeat;
-  background-image: url(../images/girls.png);
-  background-size: cover;
-  background-position: center;
-}
-/*hero*/
-.hero {
-  padding-top: 210px;
-  padding-bottom: 224px;
-  padding-left: 250px;
-  padding-right: 250px;
   display: flex;
+  margin-bottom: 97px;
+  height: 608px;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 0;
+
+  justify-content: center;
   color: #fffcfc;
   font-size: 48px;
-  letter-spacing: -1px;
   font-family: 'Roboto';
   font-weight: 300;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/girls.png);
 }
-
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .green {
+  display: inline-block;
   color: #1abc9c;
 }
 
 .hero-link {
+  margin-top: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 26px;
+  padding-left: 26px;
   width: 120px;
   height: 42px;
   background-color: #1abc9c;
@@ -171,6 +172,60 @@ html {
   font-family: 'Roboto';
   text-align: center;
 }
+
+/*about*/
+.about {
+  font-family: 'Open sans';
+  font-weight: 300;
+  align-items: center;
+  padding-left: 245px;
+  padding-right: 245px;
+}
+
+.list-about {
+  display: flex;
+  margin-bottom: 82px;
+}
+.about-card {
+  width: 278px;
+  position: relative;
+}
+.about-card::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/world.png);
+}
+/*.about-title {
+  margin-top: 0;
+  width: 255px;
+  height: 30px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #555252;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-text {
+  margin-top: 0;
+  width: 254px;
+  height: 145px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #555252;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-align: center;
+}
+.about-about-1::before {
+  background-image: url(../images/world.png);
+}*/
+
 /*section1*/
 
 .card {
