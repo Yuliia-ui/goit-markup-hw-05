@@ -30,7 +30,7 @@ html {
   font-family: 'Open Sans';
   font-weight: 700;
   min-height: 95px;
-  margin-bottom: 98px;
+  margin-bottom: 30px;
 }
 
 /*link-info*/
@@ -54,25 +54,23 @@ html {
 }
 
 .link-contacts::before {
+  display: inline-block;
   content: '';
   background-image: url(../images/phone.png);
-  width: 31px;
-  height: 27px;
+  width: 20px;
+  height: 30px;
   background-repeat: no-repeat;
-  font-size: 20px;
-  letter-spacing: 0px;
-  line-height: 1.5px;
   align-items: center;
   justify-content: center;
 }
 
-/*user-menu*/
-.user-menu {
+/*top-header*/
+.top-header {
   display: flex;
   margin-left: auto;
 }
 
-.user-menu .user-menu-link {
+.top-header .top-header-link {
   display: inline-block;
   padding-left: 14px;
   padding-right: 14px;
@@ -84,8 +82,8 @@ html {
   padding-bottom: 16px;
 }
 
-.user-menu .user-menu-link:hover,
-.user-menu .user-menu-link:focus {
+.top-header .top-header-link:hover,
+.top-header .top-header-link:focus {
   color: #212121;
 }
 /*nav*/
@@ -130,6 +128,48 @@ html {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #1abc9c;
+}
+/*banner*/
+.banner {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  height: 608px;
+  background-repeat: no-repeat;
+  background-image: url(../images/girls.png);
+  background-size: cover;
+  background-position: center;
+}
+/*hero*/
+.hero {
+  padding-top: 210px;
+  padding-bottom: 224px;
+  padding-left: 250px;
+  padding-right: 250px;
+  display: flex;
+  color: #fffcfc;
+  font-size: 48px;
+  letter-spacing: -1px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-align: center;
+}
+
+.green {
+  color: #1abc9c;
+}
+
+.hero-link {
+  width: 120px;
+  height: 42px;
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  text-align: center;
 }
 /*section1*/
 
