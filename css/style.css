@@ -5,8 +5,6 @@
 
 body {
   margin: 0px;
-  background-color: #ffffff;
-  color: #212121;
 }
 html {
   box-sizing: border-box;
@@ -28,10 +26,100 @@ html {
 
 .header {
   font-family: 'Open Sans';
-  font-weight: 700;
   min-height: 95px;
   margin-bottom: 98px;
 }
+
+/*menu-section*/
+.menu-section {
+  align-items: center;
+  height: 50px;
+  background-color: #1abc9c;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+.active-menu {
+  display: flex;
+}
+.contact {
+  display: flex;
+  margin: 0;
+}
+
+.contact .tel-icon {
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 11px;
+  color: #fefefe;
+}
+
+.contact .mail-icon {
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 11px;
+  color: #fefefe;
+}
+
+.tel-icon::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/tell.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.mail-icon::before {
+  padding-left: 10px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-image: url(../images/mail.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.tel-icon:hover,
+.tel-icon:focus {
+  color: #515151;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  color: #515151;
+}
+
+.info-menu {
+  display: flex;
+  margin-left: auto;
+  text-decoration: none;
+}
+.info-list {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.info-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 11px;
+  color: #fefefe;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.info-link:hover,
+.info-link:focus {
+  color: #515151;
+}
+
 /*nav*/
 
 .site-logo {
@@ -58,6 +146,8 @@ html {
 .page-nav {
   display: flex;
   align-items: center;
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
 
 .site-nav .link {
@@ -95,35 +185,38 @@ html {
   justify-content: center;
   flex-direction: column;
 }
-.banner-text{
+.banner-text {
   margin-top: 0;
   margin-bottom: 17px;
   font-size: 48px;
   letter-spacing: -1px;
   color: #fffcfc;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 300;
   text-align: center;
 }
-.green{
+.green {
   color: #1abc9c;
 }
-.banner-link{
+.banner-link {
   margin-bottom: 223px;
   padding-top: 12px;
   padding-bottom: 12px;
   width: 120px;
-height: 42px;
-background-color: #1abc9c;
-border: 2px solid #1abc9c;
-font-size: 14px;
-letter-spacing: 0px;
-color: #ffffff;
-font-family: "Roboto";
-font-weight: 400;
-text-align: center;
-text-decoration: none;
+  height: 42px;
+  background-color: #1abc9c;
+  border: 2px solid #1abc9c;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
 }
+/*about*/
+
+
 
 /*section1*/
 
