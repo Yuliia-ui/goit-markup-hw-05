@@ -32,13 +32,13 @@ html {
 
 /*menu-section*/
 
-.menu-section {
-  align-items: center;
+.top-header {
   height: 50px;
   background-color: #1abc9c;
   font-family: 'Open Sans';
   font-weight: 300;
 }
+
 .active-menu {
   display: flex;
 }
@@ -217,6 +217,7 @@ html {
   text-decoration: none;
 }
 /*about*/
+
 .about {
   margin-bottom: 80px;
   display: flex;
@@ -298,7 +299,6 @@ html {
 
 /*new collection*/
 
-
 .new-container {
   width: 1714px;
   min-height: 676px;
@@ -328,7 +328,7 @@ html {
 .new-title {
   padding-top: 80px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 92px;
   font-size: 48px;
   letter-spacing: -1px;
   line-height: 32px;
@@ -377,16 +377,13 @@ html {
   position: relative;
   color: #ffffff;
 }
-.border::before {
-  margin-bottom: 70px;
-  content: '';
-  display: inline-block;
-  width: 160px;
-  height: 17px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/border.png);
+
+.green-line::after {
+  display: flex;
+  justify-content: center;
+  padding-top: 23px;
+
+  content: url(../images/border.png);
 }
 
 .new-link:hover .new-text {
@@ -395,8 +392,10 @@ html {
 .new-link:hover .price {
   background-color: #7fd9c7;
 }
+
 /*section1*/
-img{
+
+.img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -404,10 +403,6 @@ img{
 .card {
   font-family: 'Roboto';
   margin-bottom: 105px;
-}
-.card{
-  overflow: hidden;
-  position: relative;
 }
 
 .snap-list {
@@ -419,7 +414,7 @@ img{
 .title {
   padding-top: 91px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 92px;
   color: #515151;
   font-size: 48px;
   line-height: 0.6;
@@ -576,6 +571,18 @@ img{
 }
 
 /*footer*/
+.white-line::after {
+  padding-top: 23px;
+  display: flex;
+  justify-content: center;
+  content: url(../images/white..png);
+}
+.form {
+  width: 540px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+}
 .container-form {
   display: flex;
   justify-content: center;
@@ -584,7 +591,6 @@ img{
   background-image: url(../images/footer.jpg);
   height: 463px;
 }
-
 .footer-text {
   margin-top: 0;
   margin-bottom: 40px;
@@ -596,7 +602,6 @@ img{
   font-weight: 300;
   text-align: center;
 }
-
 .footer-button {
   position: absolute;
   background-image: url(../images/enter.png);
@@ -607,7 +612,6 @@ img{
   height: 60px;
   border-radius: 5px;
   background-color: #4ec6ab;
-  
 }
 .footer-input {
   position: relative;
@@ -622,7 +626,6 @@ img{
   border-radius: 5px;
   background-color: #ffffff;
 }
-
 .footer-button:hover,
 .footer-button:focus {
   background-color: #7cf0d9;
