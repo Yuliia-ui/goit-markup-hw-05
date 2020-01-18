@@ -299,6 +299,9 @@ html {
 
 /*new collection*/
 
+.new-collection {
+  background-color: #e9f0fd;
+}
 .overlay {
   position: relative;
   height: 100%;
@@ -313,14 +316,12 @@ html {
   height: 283px;
   content: '';
   background-color: rgba(0, 0, 0, 0.55);
-  border: 10px solid rgba(255, 255, 255, 0.55);
   background-clip: padding-box;
 }
-.product-link:hover .overlay::before {
+.new-link:hover .overlay::before {
   display: block;
 }
 .new-container {
-  width: 1714px;
   min-height: 676px;
   background-color: #e9f0fd;
   text-align: center;
@@ -345,58 +346,13 @@ html {
 .new-snap:last-child {
   margin-right: 0;
 }
-.new-title {
-  padding-top: 80px;
-  margin: 0;
-  margin-bottom: 92px;
-  font-size: 48px;
-  letter-spacing: -1px;
-  line-height: 32px;
-  color: #515151;
-  font-family: 'Roboto';
-  text-align: center;
-}
 
 .new-link {
   display: flex;
   align-items: flex-end;
   width: 255px;
-  height: 320px;
+  height: 325px;
   text-decoration: none;
-}
-.new-img {
-  width: 255px;
-  position: absolute;
-  background-color: #e9f0fd;
-}
-
-.new-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 33px;
-  position: relative;
-  background-color: #323232;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.7;
-}
-.price {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto - Black';
-  font-weight: 400;
-  font-size: 18px;
-  background-color: #8c8c8c;
-  width: 52px;
-  height: 33px;
-  position: relative;
-  color: #ffffff;
 }
 
 .green-line::after {
@@ -407,10 +363,10 @@ html {
   content: url(../images/border.png);
 }
 
-.new-link:hover .new-text {
+.new-link:hover .description {
   background-color: #1abc9c;
 }
-.new-link:hover .price {
+.new-link:hover .cost {
   background-color: #7fd9c7;
 }
 
@@ -429,12 +385,12 @@ html {
   content: '';
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
+  top: 20px;
+  left: 20px;
+  width: 215px;
+  height: 240px;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 .snap-list-link:hover .overlay::before {
   display: block;
@@ -573,16 +529,13 @@ html {
 .news-list-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .line::after {
-  content: '';
-  display: inline-block;
-  width: 136px;
-  height: 3px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/line.png);
+  display: flex;
+  padding-bottom: 20px;
+  content: url(../images/line.png);
 }
+
 /*links-news*/
 
 .link-news {
