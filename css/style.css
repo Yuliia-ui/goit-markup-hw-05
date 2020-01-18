@@ -299,6 +299,26 @@ html {
 
 /*new collection*/
 
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.overlay::before {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 255px;
+  height: 283px;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 10px solid rgba(255, 255, 255, 0.55);
+  background-clip: padding-box;
+}
+.product-link:hover .overlay::before {
+  display: block;
+}
 .new-container {
   width: 1714px;
   min-height: 676px;
@@ -353,10 +373,11 @@ html {
 .new-text {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  width: 255px;
-  height: 40px;
+  width: 200px;
+  height: 33px;
   position: relative;
   background-color: #323232;
   color: #ffffff;
@@ -372,8 +393,8 @@ html {
   font-weight: 400;
   font-size: 18px;
   background-color: #8c8c8c;
-  width: 54px;
-  height: 40px;
+  width: 52px;
+  height: 33px;
   position: relative;
   color: #ffffff;
 }
@@ -400,6 +421,25 @@ html {
   max-width: 100%;
   height: auto;
 }
+
+.overlay {
+  position: relative;
+}
+.overlay::before {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.snap-list-link:hover .overlay::before {
+  display: block;
+}
+
 .card {
   font-family: 'Roboto';
   margin-bottom: 105px;
@@ -446,45 +486,44 @@ html {
 }
 .image {
   width: 255px;
+  height: 321px;
+  position: absolute;
 }
-.snap-list .description {
+.description {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 900;
+  background-color: #323232;
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 255px;
+  margin: 0px;
+  padding-left: 15px;
+  width: 200px;
   height: 40px;
-  position: relative;
-  background-color: #323232;
-  color: #ffffff;
   font-size: 18px;
-  line-height: 1.7;
 }
-.image {
-  width: 256px;
+
+.media {
   position: absolute;
-  background-color: #e9f0fd;
+  display: flex;
 }
 
 .cost {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto - Black';
-  font-weight: 400;
-  font-size: 18px;
+  align-items: center;
   background-color: #8c8c8c;
+  width: 55px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 18px;
   width: 54px;
   height: 40px;
-  position: relative;
   color: #ffffff;
-}
-
-.list {
-  color: ;
-  font-size: 18px;
-  line-height: 1.7;
 }
 
 .snap-list-link:hover .description {
