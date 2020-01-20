@@ -180,7 +180,7 @@ html {
 .banner {
   position: relative;
   padding-top: 194px;
-  height: 608px;
+  min-height: 602px;
 }
 .banner-text {
   margin-top: 0;
@@ -196,9 +196,8 @@ html {
   color: #1abc9c;
 }
 .banner-link {
-  position: absolute;
-  top: 60%;
-  right: 40%;
+  display: block;
+  margin: 0 auto;
   padding-top: 12px;
   padding-bottom: 12px;
   width: 120px;
@@ -217,7 +216,7 @@ html {
 
 .about {
   padding-top: 93px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +243,6 @@ html {
   font-weight: 600;
 }
 .about-text {
-  margin-bottom: 74px;
   margin-top: 0;
   font-size: 14px;
   line-height: 24px;
@@ -411,7 +409,7 @@ html {
 }
 .title {
   margin: 0;
-  padding-bottom: 117px;
+  margin-bottom: 117px;
   color: #515151;
   font-size: 48px;
   line-height: 0.6;
